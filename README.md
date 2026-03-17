@@ -1,0 +1,1 @@
+Aplikacja wczytuje tablicę cyfr od użytkownika i wypisuje je słownie.
