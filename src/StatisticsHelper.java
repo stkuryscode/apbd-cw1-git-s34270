@@ -20,6 +20,12 @@ public class StatisticsHelper {
     }
 
     public static int calculateMin(int[] values) {
-        return 0;
+        int min = values[0];
+        for (int val : values) {
+            if (val < min) {
+                min = val;
+            }
+        }
+        return min;
     }
 }
