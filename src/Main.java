@@ -3,16 +3,22 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Podaj cyfre (0-3): ");
-        int number = scanner.nextInt();
+        int[] numbers = new int[3];
 
-        System.out.print("Wprowadzono: ");
-        switch (number) {
-            case 0: System.out.println("zero"); break;
-            case 1: System.out.println("jeden"); break;
-            case 2: System.out.println("dwa"); break;
-            case 3: System.out.println("trzy"); break;
-            default: System.out.println("nieznana liczba"); break;
+        System.out.println("Podaj 3 cyfry od 0 do 3: ");
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = scanner.nextInt();
+        }
+
+        System.out.println("Wprowadzono: ");
+        for (int num : numbers) {
+            switch (num) {
+                case 0: System.out.println("zero"); break;
+                case 1: System.out.println("jeden"); break;
+                case 2: System.out.println("dwa"); break;
+                case 3: System.out.println("trzy"); break;
+                default: System.out.println("nieznana liczba (" + num + ")"); break;
+            }
         }
     }
 }
