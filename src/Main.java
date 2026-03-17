@@ -5,7 +5,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int[] numbers = new int[3];
 
-        System.out.println("Podaj 3 cyfry od 0 do 3: ");
+        System.out.println("podaj 3 cyfry: ");
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = scanner.nextInt();
         }
